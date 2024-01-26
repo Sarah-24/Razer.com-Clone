@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #999999;
+    --tertiary-text-icon-color: #44d62c;
+    --heading-font-fam: 'Roboto', sans-serif;
+    --body-font-fam: 'Noto Sans', sans-serif;
+    --padding-inline-section: 12px;
+}
+
+body {
+    background-color: #222222;
+    color: var(--primary-text-color);
+    font-family: var(--body-font-fam);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: var(--heading-font-fam);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-family: var(--heading-font-fam);
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: var(--heading-font-fam);
+}
+
+p {
+    font-size: .85rem;
+    font-family: var(--body-font-fam);
+    line-height: 1.8rem;
+}
+
+a {
+    font-size: .9rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--primary-text-color);
+}
+
+li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    background-color: black;
+    justify-content: center;
+    border-bottom: 1px solid var(--tertiary-text-icon-color);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.navbar {
+    width: 80%;
+    justify-content: space-between;
+    padding: var(--padding-inline-section);
+}
+
+.logo-img {
+    line-height: 0;
+    width: 35px;
+}
+
+.fa-magnifying-glass,
+.fa-cart-shopping {
+    font-size: larger;
+}
+
+.fa-cart-shopping {
+    color: var(--secondary-text-color);
+}
+
+.fa-magnifying-glass:hover,
+.fa-cart-shopping:hover {
+    color: var(--primary-text-color);
+}
+
+.navbar ul {
+    width: 74%;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+}
+
+.top-banner {
+    justify-content: center;
+    background-color: #555555;
+    position: relative;
+    top: 60px;
+}
+
+.top-banner p {
+    padding-block: 8px;
+}
+
+.top-banner-anchor-text {
+    color: var(--primary-text-color);
+}
+
+.main-container {
+    display: grid;
+    gap: 10px;
+    height: 100vh;
+    grid-template: repeat(7, 1fr)/repeat(2, 1fr);
+}
+
+.main-container>* {
+    height: 100vh;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sub-container-text {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 3.5rem;
+    gap: 8px;
+}
+
+.sub-container-text a {
+    color: var(--primary-text-color);
+    font-size: 1rem;
+}
+
+.sub-container-text a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid var(--primary-text-color);
+}
+
+.first-sub-container {
+    height: 106vh;
+    background: url('./assets/kishi-v2-pro-for-android-homepage-desktop2x.webp') no-repeat center/cover;
+    grid-column: span 2;
+    padding-top: 4rem;
+}
+
+.second-sub-container {
+    height: 106vh;
+    background: url('./assets/intel-gamer-days-2023-homepage-desktop2x.webp') no-repeat center/cover;
+    grid-column: span 2;
+}
+
+.third-sub-container {
+    height: 106vh;
+    background: url('./assets/back-to-school-homepage-desktop2x.webp') no-repeat center/cover;
+    grid-column: span 2;
+}
+
+.fourth-sub-container {
+    background: url('./assets/razercon2023-950x580-desktop.webp') no-repeat center/cover;
+}
+
+.fifth-sub-container {
+    background: url('./assets/razer-blade-14-2023-b-950x580-desktop.webp') no-repeat center/cover;
+}
+
+.sixth-sub-container {
+    background: url('./assets/razer-blackwidow-v4-75-b-950x580-desktop.webp') no-repeat center/cover;
+}
+
+.seventh-sub-container {
+    background: url('./assets/razer-kitsune-950x580-desktop.webp') no-repeat center/cover;
+}
+
+.eighth-sub-container {
+    background: url('./assets/mercury-blade16-blade18-b-950x580-desktop.webp') no-repeat center/cover;
+}
+
+.ninth-sub-container {
+    background: url('./assets/razer-edge-b-950x580-desktop.webp') no-repeat center/cover;
+}
+
+.inline-text-1 {
+    display: inline-block;
+    padding-right: 35px;
+}
+
+.fa-angle-right {
+    color: var(--tertiary-text-icon-color);
+    font-size: .8rem;
+}
+
+.footer-section {
+    background-color: #111111;
+    grid-column: span 2;
+    height: 50vh;
+}
+
+.footer-container {
+    justify-content: center;
+}
+
+.sub-footer-container {
+    align-items: flex-start;
+    margin-top: 20px;
+    width: 80%;
+    justify-content: flex-start;
+    background-color: #111111;
+    border-bottom: 1px solid var(--secondary-text-color);
+    padding-bottom: 20px;
+}
+
+.sub-footer-container>* {
+    width: 20%;
+}
+
+.sub-footer-container-font * {
+    font-size: .75rem;
+}
+
+.card-5 i {
+    border: 1px solid var(--secondary-text-color);
+    border-radius: 50%;
+    padding: 6px;
+    margin-top: 5px;
+}
+
+.card-6 p {
+    font-size: .9rem;
+    color: var(--tertiary-text-icon-color);
+}
+
+.last-footer-container {
+    justify-content: center;
+}
+
+.last-footer-container * {
+    color: var(--secondary-text-color);
+}
+
+.copyright {
+    width: 67%;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.copyright span {
+    color: var(--secondary-text-color);
+    margin-top: 10px;
+}
+
+.location {
+    justify-content: flex-end;
+}
